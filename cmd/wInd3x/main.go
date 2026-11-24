@@ -40,6 +40,7 @@ func main() {
 	rootCmd.PersistentFlags().BoolVarP(&verboseLog, "verbose", "v", false, "Enable verbose debug logging")
 	rootCmd.AddCommand(haxDFUCmd)
 	rootCmd.AddCommand(runCmd)
+	rootCmd.AddCommand(bootCmd)
 	rootCmd.AddCommand(makeDFUCmd)
 	rootCmd.AddCommand(dumpCmd)
 	rootCmd.AddCommand(decryptCmd)
